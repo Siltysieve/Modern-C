@@ -1,14 +1,25 @@
 #include <stdio.h>
- int main(){
+#include <stdbool.h>
 
-
-int i, j, k;
-i = 1;
-j = 2;
-k = i > j ? i : j; /* k is now 2 */
-k = (i >= 0 ? i : 0) + j; /* k is now 3 */
+int main(){
     
+    int usr;
 
-return 0;
+    printf("enter a number\n");
+    
+    scanf("%d", &usr);
 
- }
+    switch (usr)  {
+
+        case 1: printf("entered 1");
+                break;
+        case 2: printf("entered 2");
+                break;
+        case 3: printf("entered 3");
+                break;
+        default: printf("nothing");
+                break;
+    }
+
+    return  0;
+}
