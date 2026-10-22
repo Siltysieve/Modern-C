@@ -1,0 +1,6 @@
+When overflow occurs in signed integers the behaviour in undefined.
+
+When overflow occurs during an operation on unsigned integers, though, the
+result is defined: we get the correct answer modulo 2n, where n is the number of
+bits used to store the result. For example, if we add 1 to the unsigned 16-bit num-
+ber 65,535, the result is guaranteed to be 0.
